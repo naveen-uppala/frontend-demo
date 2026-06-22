@@ -14,4 +14,11 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t frontend:3 .  
+          
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::623900187958:role/github_aws_role
+          aws-region: us-east-2
+          
 
