@@ -5,10 +5,10 @@ on:
     inputs:
       image_tag:
         description: "Docker image tag to deploy"
-        required: false
+        required: true
       replicaCount:
         description: "Number of replicas"
-        required: false        
+        required: true        
   # workflow_run:
   #   workflows: ["Frontend CI Workflow"]
   #   types:
