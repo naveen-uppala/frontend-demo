@@ -78,7 +78,7 @@ jobs:
             # Manual dispatch without tag — fetch last successful CI run number
             echo "No tag provided, fetching last successful CI run..."
             TAG=$(gh api \
-              "/repos/${{ github.repository_owner }}/${{ github.event.repository.name }}/actions/workflows/ci_workflow.yaml/runs?status=success&per_page=1" \
+              "/repos/${{ github.repository_owner }}/${{ github.event.repository.name }}/actions/workflows/ci_workflow.yml/runs?status=success&per_page=1" \
               --jq '.workflow_runs[0].run_number')
           fi
       
