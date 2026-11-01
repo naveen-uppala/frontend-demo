@@ -2,8 +2,7 @@ name: Frontend CI workflow
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ "main" ]
+
 
 permissions:
   contents: read
