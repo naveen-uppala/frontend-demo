@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     env:
       ECR_REPOSITORY: frontend
       IMAGE_TAG: ${{ github.run_number }}
