@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   DEPLOY:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     env:
       ECR_REPOSITORY: frontend
     if: >
